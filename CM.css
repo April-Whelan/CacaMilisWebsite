@@ -1,0 +1,886 @@
+
+/* April Whelean, C00266643, 02/05/2021 */
+
+/*Home page (index.html) */
+/* Sets the background colour for all HTML pages*/
+html
+
+{
+background-color: #fcdecc;
+}
+
+
+
+
+/* Creates a container for the nav bar. Overflow property clips the overflow so
+the rest of the content is visible. Setting the border radius to 25px
+makes the corner of the nav bar rounded.  */
+.navbar {
+  overflow: hidden;
+  background-color:  #CFB53B;
+  border-radius: 25px;
+}
+
+/* Styles the links inside the navbar. Float element displays text on specified
+part of the page, font size and color change the font style, padding is set
+to create padding and text-decoration-none takes away the default underline
+ */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*Styles the dropdown container.  */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Styles the button so that it blends in with the nav bar. */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+
+}
+
+/* Adds a darker gold color to navbar links when the mouse is hovered over them. */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #8c7c2e;
+}
+
+/*Styles dropdown content. An absolute position positions the element to its first
+ancestor element. Box shadow creates shadows. Z index is used to specify the
+stack order of an element.   */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Styles the links inside the drop down menu. Text-align specifies the alignment
+of the text. Display block displays element as a block element.  */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Adds a grey background to the links when they are hovered over. */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Displays the dropdown content */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Media Query tag that changes the font size of the nav bar when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    font-size: 18px;
+
+  }
+}
+
+/* Gives styling proprties to the image with this class name.
+Opacity sets the transparency of the image. A relative position adjusts an element
+away from it's normal position. */
+.imageH
+{
+width: 100%;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+opacity: 0.6;
+position: relative;
+top: 0;
+left:0;
+}
+
+/* Media Query tag that changes the width and height of the image when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .imageH {
+    width: 100%;
+height: auto;
+  }
+}
+
+
+/* Gives styling proprties to the image with this class name. */
+.imageH1
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 150px;
+  margin-left: 500px;
+  width: 20%;
+
+}
+
+/* Media Query tag that changes the width, height and layout
+ of the image when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .imageH1 {
+    width: 40%;
+    display: block;
+    margin-left: 20%;
+
+  }
+}
+
+
+/* Webkit-linear-gradient creates an image consisting of a transition between
+multiple colors.
+- webkit background clip text element clips the background to the foreground text
+- webkit text fill color specifies the fill color of the text.
+- webkit animation allows the colors to change. The seconds are set also. */
+.animate
+ {
+  color: #CFB53B;
+  background-image: -webkit-linear-gradient(92deg, #806E1B, #F5DB64);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
+}
+
+/* Media Query tag that changes proprties of the animated text when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .animate {
+    font-size: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+    text-align: center;
+  }
+}
+
+
+/* Keyframes rule specifies the animation code.*/
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
+
+/* Gives style proprties to the text of this class. */
+.WelcomeT
+{
+float: left;
+text-align: center;
+  position: absolute;
+margin-top: 7%;
+margin-left: 3%;
+  font-size: 3vh;
+}
+
+
+/* Gives style proprties to the element of this class. A border is set here around the
+button element.*/
+.button
+{
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color:  #CFB53B;
+  width: 10%;
+}
+
+/* Changes the text to a darker color when hovered over. */
+.button:hover
+{  background-color: #8c792e;}
+
+
+
+ /* Gives style proprties to the element of this class. */
+.browse
+{ height: 60%;
+width: auto;
+background-color: white; }
+
+ /* Gives style proprties to the text of this class. */
+.Btext
+{
+float: left;
+padding-left: 3%;
+padding-top: 15%;
+color: #CFB53B;
+font-size: 3vh;
+text-align: center;
+}
+
+/* Media Query tag that changes the font size of the nav bar when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .Btext {
+    font-size: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    text-align: center;
+    float: left;
+  }
+}
+
+ /* Gives style proprties to the image of this class. */
+.Bimage
+{ height: 100%;
+width: 60%;
+float: right;
+
+}
+
+/* Media Query tag that changes proprties of theimage when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .Bimage {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 50%;
+    margin-top: 20%;
+  }
+}
+
+ /* Gives style proprties to the element of this class. */
+.latest
+{ height: 90%;
+width: auto;
+background-color: white; }
+
+
+/* Media Query tag that changes proprties of the image when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .latest {
+    height: 30%;
+
+  }
+}
+
+ /* Gives style proprties to the image of this id. */
+#latestT
+{text-align:center;
+padding-top: 20;
+color: #CFB53B;
+}
+
+ /* flex property lets items be of the same length. */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/* flex property lets items be of the same length. */
+.row {
+  display: flex;
+}
+
+/*Inline block allows user to set a height and weight.*/
+.block {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+ /* Gives style proprties to the element of this class. */
+.container1  {
+  text-align: center;
+}
+
+ /* Gives style proprties to the text of this class. */
+.Text1
+{
+font-size: 3vh;
+}
+
+ /* Gives style proprties to the element of this class. */
+.map
+{float: right;
+   }
+
+   /* Media Query tag that changes proprties of the map when the screen is
+   less than 600px */
+   @media only screen and (max-width: 600px) {
+     .map {
+       height: 100%;
+
+     }
+   }
+
+ /* Gives style proprties to the element of this class. */
+.mapb
+{
+  height: 80%;
+ width: auto;
+ background-color: white;
+
+}
+ /* Gives style proprties to the text of this class. */
+.mtext
+{color: black;
+float: left;
+padding-left: 10%;
+padding-top: 8%;
+text-align: center;}
+
+ /* Gives style proprties to the text of this class. */
+.mheading
+{color: #CFB53B;}
+
+/* Gives styling proprties to the form button */
+.Emailform input[type=submit]
+
+{
+  height: 5%;
+  width: 10%;
+  border-radius: 25px;
+  background-color: #CFB53B;
+      border: 2px solid black;
+
+}
+
+
+/* Media Query tag that changes proprties of the form when the screen is
+less than 600px */
+   @media only screen and (max-width: 600px) {
+  .Emailform input[type=submit] {
+      width: 40%;
+
+     }
+   }
+
+   @media only screen and (max-width: 600px) {
+  .Emailform input[type=text] {
+      width: 80%;
+
+     }
+   }
+
+/* Styling for CakeCollection.html */
+
+ /* Gives style proprties to the text of this class. */
+.headingCC
+{
+  text-align: center;
+}
+
+ /* Gives style proprties to the text of this class. */
+.pCC
+{text-align: center;
+font-size: 4vh;
+
+}
+
+ /* Gives style proprties to the element of this class. */
+.containerC {
+  position: relative;
+  width: 50%;
+  margin-left: 35%;
+  margin-right: 50%;
+}
+
+/* Media Query tag that changes proprties of the images when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .containerC{
+
+    display: block;
+    margin-left: 15%;
+      width: 150%;
+    height: 50%;
+
+  }
+}
+
+ /* Gives style proprties to the elements of this class. */
+.Collection {
+    display: inline-block;
+  width: 50%;
+  height: auto;
+     border-radius: 25px;
+}
+
+ /* Gives style proprties to the elements of this class. */
+.overlayC {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+background-color: white;
+opacity: 0.7;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+     border-radius: 25px;
+}
+
+ /* Gives hover effect */
+.containerC:hover .overlayC {
+  width: 50%;}
+
+/* Changes hyperlink color when hovered over */
+  .containerC a:hover
+  {color: red;}
+
+
+
+ /* Builds animation for text to come in from the left size once the mouse
+ is hovered over the image. White space no wrap ensures that the text
+ will continue on the same line until a <br> is added. (Which there are in
+ the HTML.) */
+.textC {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+
+
+/* ContactUs.html */
+
+ /* Gives style proprties to the elements of this class. */
+.contactB
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  opacity: 0.4;
+}
+
+/* Media Query tag that changes proprties of the image when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .ContactB {
+
+
+width: 100%;
+  }
+}
+ /* Gives style proprties to the elements of this class. */
+.CU
+{ position: relative;
+  text-align: center;
+}
+
+
+ /* Gives style proprties to the text of this class. Transform translate
+ centers text above image. */
+.CUtext
+ {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+}
+
+/* Media Query tag that changes proprties of the text when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .CU {
+font-size: 0.7em;
+
+
+  }
+}
+/* Styles the form */
+form
+ {
+
+   box-sizing: border-box;
+text-align: center;
+border-radius: 5px;
+background-color: #ccc;
+padding: 20px;
+opacity: 0.9;
+
+}
+
+
+
+/* Styles the text boxes */
+input[type=text], select
+{
+width: 25%;
+height: 5%;
+}
+
+/* Media Query tag that changes proprties of the input box when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  input[type=text] {
+width: 60%;
+
+
+  }
+}
+
+/* Styles the text area */
+textarea
+{
+  width: 40%;
+  height: 30%;
+}
+
+/* Media Query tag that changes proprties of the textarea when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  textarea {
+width: 90%;
+
+
+  }
+}
+ /* Gives style proprties to the text of this class. */
+.Ftext
+{font-size: 3vh;}
+
+ /* Gives style proprties to the text of this class. */
+.FText1
+{font-size: 4vh;}
+
+ /* Styles the submit button on the form. */
+.SubmitF
+{
+  height: 10%;
+  width: 10%;
+  border-radius: 25px;
+  background-color: #CFB53B;
+      border: 2px solid black; }
+
+      /* Media Query tag that changes proprties of the button when the screen is
+      less than 600px */
+      @media only screen and (max-width: 600px) {
+    .SubmitF {
+
+      width: 40%;
+
+
+        }
+      }
+
+
+/* WeddingCake.html.  Inspiration taken from w3schools.
+https://www.w3schools.com/howto/howto_js_image_grid.asp --> */
+* {
+  box-sizing: border-box;
+}
+
+ /* Gives style proprties to the text of this class. */
+body {
+  margin: 0;
+}
+
+ /* Gives style proprties to the text of this class. */
+.desc
+{font-size: 4vh;}
+
+ /* Gives style proprties to the text of this class. */
+.head1 {
+  text-align: center;
+  padding: 32px;
+}
+
+/* flex property is used once again here to allow items to
+be of the same length. */
+.rowW {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* flex property is used once again here to allow items to
+be of the same length and to align side by side */
+.columnW {
+  -ms-flex: 50%;
+  flex: 50%;
+  padding: 0 4px;
+}
+
+ /* Gives style proprties to the elements of this class. */
+.columnW img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+ /* Gives style proprties to the elements of this class. Outline none gives no ouline
+ to the button. */
+.buttonW {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  font-size: 18px;
+}
+
+/* When button is hovered over, the color will change to a dark grey */
+.buttonW:hover {
+  background-color: #ddd;
+}
+
+/* Makes the background color of buttons white. */
+.buttonW.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+/* AboutUs.html */
+ /* Gives style proprties to the elements of this class. Creates white background
+ with image and text in the foreground. */
+.BakeAU
+{ height: 60%;
+width: auto;
+background-color: white; }
+
+/* Media Query tag that changes proprties of the element when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .BakeAU {
+
+height: 80%;
+
+  }
+}
+
+ /* Gives style proprties to the text of this class. */
+.AuText
+{
+float: left;
+padding-left: 10%;
+padding-top: 6%;
+font-size: 3vh;
+text-align: center;
+}
+
+/* Media Query tag that changes proprties of the text when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .AuText {
+
+padding-top: 0%;
+
+  }
+}
+
+ /* Gives style proprties to the text of this class. */
+.headingA
+{
+  text-align: center;
+}
+
+/* Styling proprties makes icons center align */
+.icingF
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+ /* Gives style proprties to the elements of this class. */
+.BakeAU1
+{ height: 70%;
+width: auto;
+background-color: white; }
+
+/* Media Query tag that changes proprties of the element when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .BakeAU1 {
+
+height: 140%;
+
+  }
+}
+ /* Gives style proprties to the text of this class. */
+.AubText
+{
+float: right;
+padding-right: 10%;
+padding-top: 1%;
+font-size: 3vh;
+text-align: center;
+}
+
+/* Media Query tag that changes proprties of the  text when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .AubText {
+
+padding-top: 0%;
+
+  }
+}
+
+ /* Gives style proprties to the elements of this class. */
+.Baker
+{ height: 70%;
+width: 40%;
+float: left;}
+
+/* Media Query tag that changes proprties of the image when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .Baker {
+
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 40%;
+        margin-top: 0%;
+  }
+}
+ /* Gives style proprties to the elements of this class. */
+.Baking
+{ height: 60%;
+width: 40%;
+float: right;
+
+}
+
+/* Media Query tag that changes proprties of the image when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .Baking {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 30%;
+    margin-top: 0%;
+  }
+}
+
+ /* Gives style proprties to the elements of this class. */
+.video
+{ height: 70%;
+width: auto;
+background-color: white; }
+
+
+ /* Gives style proprties to the elements of this class */
+.video1
+{height: 100%;
+width: 55%;
+float: right;}
+
+/* Media Query tag that changes proprties of the embedded video when the screen is
+less than 600px */
+@media only screen and (max-width: 600px) {
+  .video1 {
+
+height: 50%;
+width: 100%;
+margin-top: 5%;
+
+  }
+}
+
+ /* Gives style proprties to the text of this class. */
+.VideoT
+{
+  float; left;
+  padding-left: 0%;
+  padding-top: 15%;
+  text-align: center;
+}
+
+
+/*Footer Styling proprties. */
+.footer1 {
+  background-color: #CFB53B;
+	text-align: center;
+	margin: 10px 0;
+	padding: 10px 0;
+}
+
+
+/* Gives style proprties to the text of this class. */
+#footer {
+	text-align: center;
+}
+
+
+/* Gives style proprties to the text of this class. */
+.Fwrap {
+	text-align: center;
+}
+
+
+/* Gives style proprties to the list used to create the footer.*/
+.Fwrap ul li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* Gives style proprties to icons. The filter tag renders the icons. */
+.icon{
+	margin-top: .625em;
+	width: 40px;
+	height: 40px;
+	opacity: .6;
+	filter: alpha(opacity=100);
+  border-radius: 25px;
+  position: ;
+}
+
+
+/* filter alpha changes transparncy of icons on hover. */
+.icon:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=60);
+}
+
+/* Gives style proprties to the text of this class. */
+.navF {
+	text-align: center;
+}

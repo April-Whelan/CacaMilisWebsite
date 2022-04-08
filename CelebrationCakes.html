@@ -1,0 +1,130 @@
+<!-- April Whelan, C00266643, 2/05/2021. -->
+
+<!-- Html elment to start the document. -->
+<html>
+
+<!-- Head element is used as a container for metadata. -->
+<head>
+
+<!-- Title element which will make the text between it appear in the web
+browser tag. -->
+<title> Celebration Cakes </title>
+<!-- Link giving location of style sheet. -->
+<link rel="stylesheet" href="CM.css">
+<!-- Sets the width of the page to compliment the device being used.-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Used to give the webpage an icon in the browser tab. -->
+<link rel="icon" href="CMlogo.ico" type="image/x-icon">
+<!-- Script element used to embed an external JavaScript file. -->
+  <script src="CM.js"></script>
+
+<!-- Line break element used to produce a line break in text. -->
+<br>
+
+<!-- A div tag defines a section in a HTML document. -->
+<!-- Class tags are used to point to a class name in a stylesheet. -->
+<div class="navbar">
+  <!-- a tag defines a hyperlink which can be used to link from one webpage
+to the other. href tag provides the links location.  -->
+  <a href="index.html">Home</a>
+  <a href="AboutUs.html">About Us</a>
+      <a href="ContactUs.html">Contact Us</a>
+  <div class="dropdown">
+    <!--The button element defines a clickable button. -->
+    <button class="dropbtn">Cake Collections
+    </button>
+    <div class="dropdown-content">
+      <a href="CelebrationCakes.html">Celebration Cakes</a>
+      <a href="WeddingCake.html">Wedding Cakes</a>
+
+    </div>
+  </div>
+</div>
+
+
+
+</head>
+<body>
+
+<!-- Combined with CCS and JavaScript, this section creates a photo grid to
+dispaly the cakes. Inspiration taken from w3schools.
+https://www.w3schools.com/howto/howto_js_image_grid.asp -->
+<div class="head1" id="headW">
+  <h1>Celebration Cakes</h1>
+  <p class="desc">Be it a birthday, anniversary or just a special day,
+    we've got cakes suited to you!.
+  <br>
+<br>
+Click on the buttons to change the display of the images</p>
+<!-- Creates the buttons and JavaScript call functions -->
+  <button class="buttonW" onclick="one()">1</button>
+  <button class="buttonW active" onclick="two()">2</button>
+  <button class="buttonW" onclick="three()">3</button>
+</div>
+
+<!-- Style tag embeds css features into html -->
+<div class="rowW">
+  <div class="columnW">
+    <img src="ccake1.jpg" style="width:100%">
+    <img src="ccake20.jfif" style="width:100%">
+    <img src="ccake2.jpg" style="width:100%">
+    <img src="ccake13.jpg" style="width:100%">
+    <img src="ccake3.jpg" style="width:100%">
+    <img src="ccake4.jpg" style="width:100%">
+    <img src="ccake5.jfif" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="ccake15.jpg" style="width:100%">
+    <img src="ccake16.jpg" style="width:100%">
+    <img src="ccake6.jpg" style="width:100%">
+    <img src="ccake7.jfif" style="width:100%">
+    <img src="ccake8.jpg" style="width:100%">
+    <img src="ccake9.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="ccake10.jpg" style="width:100%">
+    <img src="ccake11.jpg" style="width:100%">
+    <img src="ccake12.jpg" style="width:100%">
+    <img src="ccake14.jpg" style="width:100%">
+    <img src="ccake17.jpg" style="width:100%">
+    <img src="ccake18.png" style="width:100%">
+
+  </div>
+
+</div>
+
+<!-- See index.html for footer comments. -->
+<footer id="footer" class="footer1">
+  <div class="Fwrap">
+    <ul>
+      <li>
+        <a href="https://twitter.com/?lang=en" target="_blank">
+          <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo" class="icon"></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo" class="icon"></a>
+      </li>
+
+      <li>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico" alt="Facebook Logo" class="icon"></a>
+      </li>
+
+      <li>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img src="https://lh3.googleusercontent.com/j_RwVcM9d47aBDW5DS1VkdxUYCkDUCB6wZglv4x-9SmsxO0VaFs7Csh-FmKRCWz9r_Ef=w170" alt="Youtube Logo" class="icon"></a>
+      </li>
+
+    </ul>
+  </div>
+
+  <nav class="Fnav" >
+    <p class="navF">Copyright &copy; 2021-
+       Caca Milis. All rights reserved.</p>
+  </nav>
+</footer>
+
+
+</body>
+</html>
